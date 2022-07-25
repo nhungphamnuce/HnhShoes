@@ -1,0 +1,57 @@
+#table {
+    border-collapse: collapse;
+    width: 97%;
+    margin: 20px 20px;
+}
+
+#table td,
+#table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    font-size: 15px;
+    text-decoration-color: coral;
+    text-align: center;
+}
+
+#table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#table tr:hover {
+    background-color: #ddd;
+}
+
+#table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: var(--main_color--);
+    color: var(--word_color--);
+}
+
+.img-table {
+    height: 200px;
+}
+
+.rm-item-cart {
+    font-size: 15px;
+    color: red;
+}
+
+.qty {
+    width: 40px;
+    height: 30px;
+    font-size: 20px;
+}
+
+
+/*END TABLE*/
+
+.btn-order {
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: none;
+    background-color: #1c976a;
+    color: white;
+    cursor: pointer;
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HNH Shoes edit-product</title>
+
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/datepicker3.css" rel="stylesheet">
+<link href="css/bootstrap-table.css" rel="stylesheet">
+<link href="css/styles.css" rel="stylesheet">
+
+<!--Icons-->
+<script src="js/lumino.glyphs.js"></script>
+
+<!--[if lt IE 9]>
+<script src="js/html5shiv.js"></script>
+<script src="js/respond.min.js"></script>
+<![endif]-->
+
+</head>
+
+<body>
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#sidebar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="../index.html"><span>HNH</span> Shoes</a>
+                        <ul class="user-menu">
+                            <li class="dropdown pull-right">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><svg class="glyph stroked male-user"><use xlink:href="#stroked-male-user"></use></svg> Admin <span class="caret"></span></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="#"><svg class="glyph stroked male-user"><use xlink:href="#stroked-male-user"></use></svg> Hồ sơ</a></li>
+                                    <li><a href="#"><svg class="glyph stroked cancel"><use xlink:href="#stroked-cancel"></use></svg> Đăng xuất</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                                    
+                </div><!-- /.container-fluid -->
+            </nav>
+		
+			<div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar">
+				<ul class="nav menu">
+					<li><a href="category.html"><svg class="glyph stroked open folder"><use xlink:href="#stroked-open-folder"/></svg>Quản lý danh mục</a></li>
+					<li><a href="product.html"><svg class="glyph stroked bag"><use xlink:href="#stroked-bag"></use></svg>Quản lý sản phẩm</a></li>
+                    <li><a href="supplier.html"><svg class="glyph stroked open folder"><use xlink:href="#stroked-open-folder"/></svg>Quản lý nhà cung cấp</a></li>
+                    <li  class="active"><a href="order.html"><svg class="glyph stroked open folder"><use xlink:href="#stroked-open-folder"/></svg>Quản lý hóa đơn</a></li>
+                    <li><a href="../index.html"><svg class="glyph stroked open folder"><use xlink:href="#stroked-open-folder"/></svg>Về HNH Shoes</a></li>
+                </ul>
+		
+			</div><!--/.sidebar-->
+                
+	<div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">			
+		<div class="row">
+			<ol class="breadcrumb">
+                <li><a href="#"><svg class="glyph stroked home"><use xlink:href="#stroked-home"></use></svg></a></li>
+                <li><a href="">Quản lý hóa đơn</a></li>
+				<li class="active">Hóa đơn số 1</li>
+			</ol>
+		</div><!--/.row-->
+		
+		<div class="row">
+			<div class="col-lg-12">
+                <!--
+				<h1 class="page-header">Sản phẩm: Giày Sneaker Adidas Bravada "Core Black" Fw2888</h1>
+                -->
+			</div>
+        </div><!--/.row-->
+        <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <div class="col-md-6">
+                                <form role="form" method="post" enctype="multipart/form-data">
+                                <div class="form-group">
+                                    <label>Mã hóa đơn (ID)</label>
+                                    <input type="text" name="order_ID" required class="form-control" value=""  placeholder="">
+                                </div>
+                                                                
+                                <div class="form-group">
+                                    <label>Mã thanh toán</label>
+                                    <input type="text" name="order_payID" required value="" class="form-control">
+                                </div>                              
+                                <div class="form-group">
+                                    <label>Mã khách hàng</label>
+                                    <input type="text" name="order_cusID" required value="" class="form-control">
+                                </div>    
+                                <div class="form-group">
+                                    <label>Trạng thái hóa đơn</label>
+                                    <input type="text" name="order_status" required value="" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label>Ngày lập hóa đơn</label>
+                                    <input type="text" name="order_inDate" required value="" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label>Ngày xử lý hóa đơn</label>
+                                    <input type="text" name="order_proDate" required value="" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label>Tên người nhận hàng</label>
+                                    <input type="text" name="order_cusName" required value="" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label>Địa chỉ giao hàng</label>
+                                    <input type="text" name="order_cusAdd" required value="" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label>SĐT khách hàng</label>
+                                    <input type="text" name="order_cusPhone" required value="" class="form-control">
+                                </div>
+                                
+                            </div>
+                            <div class="col-md-6">
+                                
+                                <div class="form-group">
+                                        <label>Ghi chú</label>
+                                        <textarea name="order_details" required class="form-control" rows="3"></textarea>
+                                    </div>
+                                <button type="submit" name="sbm" class="btn btn-primary">Cập nhật</button>
+                                <button type="reset" class="btn btn-default">Làm mới</button>
+                            </div>
+                        </form>
+                        </div>
+                    </div>
+                </div><!-- /.col-->
+            </div><!-- /.row -->
+		
+	</div>	<!--/.main-->	
+</body>
+
+</html>
